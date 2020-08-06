@@ -1,0 +1,126 @@
+<section class="property-binding">
+
+    <article>
+        <h3>1. Interpolation</h3>
+        <p>String renderizaca com interpolacao: {{ url }}!</p>
+        <p> Resuldado de 1+1 = {{ 1+1 }}</p>
+        <p> Resuldado de 1 + 1 + Método: {{ 1 + 1 + getValor() }} </p>
+        <p> Expressao booleana: {{ !cursoAngular }}</p>
+    </article>
+
+    <article>
+        <h3>2. Property Binding</h3>
+        <img src="{{ urlImagem }}">
+        <!--  <br>
+        <img [src]= "urlImagem" >
+        <br>
+      <img bind-src= "urlImagem">-->
+    </article>
+
+    <article>
+        <h3>3. Class and Style Binding</h3>
+
+        <div>
+            Selecione uma Classe:
+            <select #x (change)="0">
+                <option value=""></option>
+                <option value="alert-success">Sucesso</option>
+                <option value="alert-info">Info</option>
+                <option value="alert-warning">Warning</option>
+                <option value="alert-danger">Danger</option>
+            </select>
+
+            <br>
+            <br>
+
+            <div [class.alert-success]="x.value == 'alert-success'">Sucesso</div>
+            <div [class.alert-info]="x.value == 'alert-info'">info</div>
+            <div [class.alert-warning]="x.value == 'alert-warning'">Warning</div>
+            <div [class.alert-danger]="x.value == 'alert-danger'">Danger</div>
+
+            <div class="{{x.value}}"> Texto </div>
+
+            <div [style.display]="x.value == 'alert-danger'?'block':'none'"> Texto só aparce em caso de erro
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h3>4. Event Binding</h3>
+        <div>
+            <button (click)="BotaoClicado()" class="btn"> Me clique! </button>
+            <br>
+            <br>
+            <input (keyup)="onKeyUp($event)" (keyup.enter)="salvarValor($event.target.value)"
+                (keyup.enter)="salvarValor($event.target.value)" (blur)="salvarValor($event.target.value)" type="text">
+            <br>
+            <br>
+            <p> Aqui está o texto capturado no input: {{valorInput}}</p>
+            <p> Este é o valor salvo com enter: {{valorSalvo}}</p>
+            <br>
+            <br>
+
+            <p (mouseover)="MouseOut()" (mouseout)="MouseOut()" [class.mouseColor]="isMouseOver">
+                Passe o mouse sobre mim!!!
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <h3>5. 2 way data Binding</h3>
+        <div>
+
+            <input type="text" [value]="nome" (input)="nome = $event.target.value" />
+            <br>
+            <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event" />
+            <!-- 2 way com um nome simples -->
+            <br>
+            <input type="text" [(ngModel)]="nome">
+
+
+            <p> Voce digitou o nome: {{nome}}</p>
+
+        </div>
+
+        <!-- 2 way com um objeto -->
+        <div>
+
+            <input type="text" [(ngModel)]="pessoa.email" />
+            <input type="text" [(ngModel)]="pessoa.status.livre" />
+
+            <p> Voce digitou {{pessoa.email}}</p>
+
+        </div>
+
+    </article>
+
+    <app-meu-form></app-meu-form>
+
+</section>
+
+<hr>
+<section class="property-binding">
+    <article>
+
+        <h3 style="color: rgb(255, 255, 255); font-size: 30pt; margin-top: 50px;">Input/Output Properties</h3>
+
+        <app-curso [nomeX]="nomedoCurso"></app-curso>
+
+    </article>
+</section>
+
+<section class="property-binding">
+    <article>
+        <h3 style="color: rgb(255, 255, 255); font-size: 30pt; margin-top: 50px;"> Emitindo Eventos com Putput
+            Properties</h3>
+
+        <contador [valor] = "valorModificado"
+                  (mudouValor) = "onMudouValor($event)"
+        >
+        </contador>
+
+        <p> O novo valor, obtido pelo componente pai, do componente filho, é : {{ valorObtidoPeloPai }}</p>
+
+
+    </article>
+</section>

@@ -1,0 +1,7 @@
+<!--<app-data-binding></app-data-binding>-->
+
+
+<!--Ciclo de Vida de Um componente-->
+<app-ciclo [valor] = "valorInicial" *ngIf = "!deletarCiclo"></app-ciclo>
+<button (click) = "MudarValor()"> Mudar valor</button>
+<button (click) = "DestruirCiclo()"> Destruir Ciclo </button>

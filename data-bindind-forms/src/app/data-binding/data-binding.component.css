@@ -1,0 +1,43 @@
+
+article{
+    width: 80%;
+  }
+  
+  .property-binding{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  
+  h3{
+      width: 100%;
+      background-color: blue;
+      color: chartreuse;
+  }
+
+  .alert-success{
+      background-color: chartreuse;
+  }
+  .alert-info{
+      background-color: cornflowerblue;
+  }
+  .alert-warning{
+      background-color: darkgoldenrod;
+  }
+  .alert-danger{
+      background-color: red;
+  }
+
+  .btn{
+      width: 100px;
+      height: 40px;
+      background-color: red;
+      color: white;
+      
+
+    }
+
+.mouseColor{
+    color: yellow;
+   }
