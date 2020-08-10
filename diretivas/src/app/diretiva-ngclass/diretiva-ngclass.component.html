@@ -1,0 +1,23 @@
+<p> Usando o class binding:</p>
+
+<h1>
+    <i class="glyphicon" 
+    [class.glyphicon-star-empty]="!favorito" 
+    [class.glyphicon-star]="favorito"
+    (click) = "meuFavorito()"
+    >
+    </i>
+</h1>
+
+<p> diretiva ng class: </p>
+<h1>
+   
+    <i class = "glyphicon" 
+        [ngClass] = "{
+        'glyphicon-star-empty': !favorito,
+        'glyphicon-star': favorito
+        }"
+    (click) = "meuFavorito()"
+    >
+    </i>
+</h1>

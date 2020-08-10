@@ -1,0 +1,25 @@
+<h5> Styles com property binding</h5>
+
+<button [style.backgroundColor]="ativo ? 'red' : 'green'" [style.color]="ativo ? 'white' : 'yellow'"
+    [style.fontSize]="fonteSize + 'px'" (click)="onClick()">
+
+    mudar estilo do botao
+
+</button>
+<br>
+<input type="text" [(ngModel)]="fonteSize">
+
+<hr>
+<h5> Styles com ngStyle</h5>
+
+<button 
+[ngStyle]=
+"{
+    'backgroundColor': (ativo ? 'red' : 'green'), 
+    'color': (ativo ? 'white' : 'yellow'),
+    'fontSize': fonteSize + 'px'
+}"
+ 
+(click)="onClick()">
+    mudar estilo do botao
+</button>

@@ -1,0 +1,37 @@
+<h5> Diretivas ngIf</h5>
+
+<div *ngIf = "mostrarCurso">
+    <ul>
+      <p>Lista de cursos:</p>  
+        <li *ngFor = "let curso of cursos">
+             {{ curso }}
+        </li>
+    </ul>
+</div>
+
+
+<div *ngIf = "!mostrarCurso">
+   Nao há cursos para serem listados!
+</div>
+
+<br>
+<button (click) = "MostarCurso()"> Listar Cursos ou esconder</button>
+
+
+<h5>Hidden como alternativa</h5>
+<div [hidden] = "!mostrarCurso">
+    <ul>
+      <p>Lista de cursos:</p>  
+        <li *ngFor = "let curso of cursos">
+             {{ curso }}
+        </li>
+    </ul>
+</div>
+
+
+<div [hidden] = "mostrarCurso">
+   Nao há cursos para serem listados!
+</div>
+
+<br>
+<button (click) = "MostarCurso()"> Listar Cursos ou esconder</button>
