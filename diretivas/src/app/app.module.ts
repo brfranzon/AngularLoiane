@@ -13,6 +13,7 @@ import { DiretivaNgcontentComponent } from './diretiva-ngcontent/diretiva-ngcont
 import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { DiretivaCustomizadaComponent } from './diretiva-customizada/diretiva-customizada.component';
 import { HeighlightMouseDirective } from './shared/heighlight-mouse.directive';
+import { HighlightDirective } from './shared/highlight.directive';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { HeighlightMouseDirective } from './shared/heighlight-mouse.directive';
     DiretivaNgcontentComponent,
     FundoAmareloDirective,
     DiretivaCustomizadaComponent,
-    HeighlightMouseDirective
+    HeighlightMouseDirective,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
