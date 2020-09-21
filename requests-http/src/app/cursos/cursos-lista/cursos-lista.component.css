@@ -1,0 +1,13 @@
+table {
+    width: 100%;
+}
+
+.test{
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.b50{
+    border-radius: 0%;
+}
