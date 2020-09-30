@@ -5,7 +5,7 @@ POST http://localhost:3000/cursos HTTP/1.1
 Content-Type: application/json
 
     {"id":"1",
-     "employee_name":"Tiger Nixon",
+     "employee_name":"Tiger Nixon HAHAHAH",
      "employee_salary":"320800",
      "employee_age":"61",
      "profile_image":""
@@ -17,7 +17,7 @@ PUT http://localhost:3000/cursos HTTP/1.1
 Content-Type: application/json
 
     {   
-     "employee_name":"Tiger Nixon...",
+     "employee_name":"Tiger Nixon X",
      "employee_salary":"320800",
      "employee_age":"61",
      "profile_image":""

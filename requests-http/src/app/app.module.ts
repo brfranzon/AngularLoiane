@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CursosFormComponent } from './cursos-form/cursos-form.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
