@@ -1,0 +1,24 @@
+{
+  "schueler": [
+    {
+      "id": "0003C8130D1663247A4A60830DF6A973",
+      "Postleitzeil": 13783,
+      "Status": 1,
+      "Nachname": "Hartmann",
+      "Vorname": "Marvin",
+      "IBAN": "",
+      "Strasse": "Grüne Aue 6 ",
+      "Stadt": "Dörnberg"
+    },
+    {
+      "id": "00042CCA9BBD4DA3AE0FB0F1D73A92EF",
+      "Postleitzeil": 58108,
+      "Status": 2,
+      "Nachname": "Klüppel",
+      "Vorname": "Alisa",
+      "IBAN": "",
+      "Strasse": "Zimmerplatz 11",
+      "Stadt": "Altenstädt"
+    }
+  ]
+}

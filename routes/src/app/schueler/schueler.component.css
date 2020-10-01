@@ -1,0 +1,12 @@
+.mouseOver{
+    background-color: aqua;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+a:hover{
+    color: rgb(114, 114, 114);
+}
